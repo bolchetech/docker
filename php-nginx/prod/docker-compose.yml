@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app_base_prod:
+    image: bolchetech/php-nginx:7.1-prod
+    build:
+        context: .
+        dockerfile: Dockerfile
+

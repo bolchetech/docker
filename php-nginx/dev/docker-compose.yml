@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app_base_dev:
+    image: bolchetech/php-nginx:7.1-dev
+    build:
+        context: .
+        dockerfile: Dockerfile
+        args:
+          USERID: ${USERID}
+          GROUPID: ${GROUPID}
+
