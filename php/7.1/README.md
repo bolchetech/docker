@@ -1,6 +1,6 @@
 # Imagen PHP 7 BASE
 
-## Construiccion
+## Building
 
 
 ```

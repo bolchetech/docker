@@ -63,6 +63,9 @@ RUN mv composer.phar /usr/local/bin/composer
 ADD ./etc/php/php-base.ini /usr/local/etc/php/conf.d/
 RUN rm /usr/local/etc/php-fpm.d/* -Rf
 ADD ./etc/php/fpm/php-base.conf /usr/local/etc/php-fpm.d/
+RUN mkdir -p /data/logs
+RUN chmod 777 /data/logs -Rf
+VOLUME /data/logs
 ADD bin/ /usr/local/bin/
 RUN chmod +x /usr/local/bin/install-php-qa-tools.sh
 
