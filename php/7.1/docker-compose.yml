@@ -1,0 +1,8 @@
+version: '3'
+services:
+  php:
+    image: bolchetech/php:7.1
+    build:
+        context: .
+        dockerfile: Dockerfile
+
